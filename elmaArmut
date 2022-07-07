@@ -1,0 +1,31 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+
+        double pearKgAmount = 2.14, appleKgAmount = 3.67, tomatoKgAmount = 1.11, bananaKgAmount = 0.95, eggplantKgAmount = 5.0;
+        double pear, apple, tomato, banana, eggplant, totalAmount;
+
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Please enter amount of the Pear:");
+        pear = sc.nextDouble();
+
+        System.out.println("Please enter amount of the Apple:");
+        apple = sc.nextDouble();
+
+        System.out.println("Please enter amount of the Tomato:");
+        tomato = sc.nextDouble();
+
+        System.out.println("Please enter amount of the Banana:");
+        banana = sc.nextDouble();
+
+        System.out.println("Please enter amount of the Eggplant:");
+        eggplant = sc.nextDouble();
+
+        totalAmount= (pear * pearKgAmount) + (apple * appleKgAmount) + (tomato * tomatoKgAmount) + (banana * bananaKgAmount) + (eggplant *eggplantKgAmount);
+
+        System.out.println("Your total amount is : " + totalAmount);
+
+    }
+}
